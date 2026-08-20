@@ -37,24 +37,8 @@ Data Ingestion (Pandas)
 - Power BI (connected live to MySQL)
 
 ## Project Structure
-vyapar-pulse/
-├── manage.py
-├── requirements.txt
-├── core/ # Django app — models, views, dashboard
-│ ├── models.py # Business, Product, TransactionRecord, Advisory
-│ ├── views.py
-│ └── templates/core/dashboard.html
-├── ml_engine/ # ML pipeline
-│ ├── anomaly_detection.py
-│ ├── forecasting.py
-│ ├── update_anomalies.py
-│ ├── load_kaggle_data.py
-│ └── pipeline.py
-├── ai_advisory/ # Gemini integration
-│ └── gemini_client.py
-├── data/ # Dataset (not committed — see below)
-└── power_bi/
-└── vyapar_pulse_dashboard.pbix
+<img width="643" height="498" alt="image" src="https://github.com/user-attachments/assets/3aab5ef0-bc54-4f74-86c0-35cdd8383765" />
+
 
 ## Dataset
 
