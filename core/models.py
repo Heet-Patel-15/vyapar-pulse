@@ -29,7 +29,15 @@ class TransactionRecord(models.Model):
     amount = models.DecimalField(max_digits=10, decimal_places=2)
     quantity = models.IntegerField(default=1)
     transaction_date = models.DateField()
-    is_anomaly = models.BooleanField(default=False)   # ← new field
+    is_anomaly = models.BooleanField(default=False)
 
     def __str__(self):
         return f"{self.transaction_type} - {self.amount}"
+
+
+class Advisory(models.Model):
+    text = models.TextField()
+    generated_at = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        return f"Advisory ({self.generated_at})"
